@@ -4,6 +4,6 @@ def main():
     name = input()
     sur = input()
     print(f"Hello {name} {sur}")
-    print(f"{name[:2]}{sur[:3]}")
+    print(f"{name[:2]}{sur[:2]}")
 
 main()
