@@ -1,9 +1,8 @@
 """card"""
 def main():
     """card"""
-    num = [int(input())]
-
-    if num(3)== 1 and num(4)==6:
+    num = input()
+    if num[2] == "1" and num[3] == "6":
         print("yes")
     else:
         print("no")
