@@ -1,9 +1,13 @@
 """math"""
 def main():
     """math"""
-    q1 = int(input())
-    q2 = int(input())
-    p1 = int(input())
-    p2 = int(input())
+    q1 = float(input())
+    q2 = float(input())
+    p1 = float(input())
+    p2 = float(input())
 
-    
+    d =(((q1-p1)**2) + ((q2-p2)**2))**(1/2)
+
+    print(d)
+
+main()
