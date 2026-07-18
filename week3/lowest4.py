@@ -1,8 +1,11 @@
 """lowest"""
 def main():
     """lowest"""
-    num1 = int(input())
-    
-    
-
+    num = int(input())
+    lowest = int(input())
+    for _ in range(num - 1):
+        nums = int(input())
+        if nums < lowest:
+            lowest = nums
+    print(lowest)
 main()

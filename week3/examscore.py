@@ -2,17 +2,19 @@
 def main():
     """examscore"""
     num_rabbit = int(input())
-    scores = []
 
-    for i in range(num_rabbit):
-        scores.append(int(input()))
-        
-    high = max(scores)
-    count = 0
-    for score in scores:
-        if score == high:
+    highest = int(input())
+    count = 1
+
+    for _ in range(num_rabbit - 1):
+        x = int(input())
+        if x > highest:
+            highest = x
+            count = 1
+        elif x == highest:
             count += 1
-            print(high)
-            print(count)
+
+    print(highest)
+    print(count)
 
 main()

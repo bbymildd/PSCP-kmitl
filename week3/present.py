@@ -8,4 +8,4 @@ def main():
     glue = float(num_split[2])
 
     cir = 2 * 3.14 * radius
-    area = 
+    
