@@ -1,3 +1,17 @@
+# """aeiou"""
+# def main():
+#     """aeiou"""
+#     num = int(input())
+#     aeiou = ["A","E","I","O","U"]
+#     nub = 0
+#     while num:
+#         font = input().upper()
+#         if font in aeiou:
+#             nub += 1
+#         num -= 1
+#     print(nub)
+# main()
+
 """aeiou"""
 def main():
     """aeiou"""
