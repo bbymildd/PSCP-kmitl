@@ -2,6 +2,6 @@
 def main():
     """loknam"""
     num = int(input())
-    print(f"num[]")
+    print(f"{num:,}")
 
 main()
