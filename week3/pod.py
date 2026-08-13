@@ -1,11 +1,18 @@
 """pod"""
 def main():
     """pod"""
-    num = input().split(" ")
-    n = int(num[0])
-    k = int(num[1])
-    pod = []
-    for i in range(n):
-        nums = int(input())
-        if nums not in pod:
-             
+    n, k = map(int, input().split())
+
+    queue = [0] * k
+
+    for _ in range(n):
+        line = int(input())
+        queue[line - 1] += 1
+
+    row = min(queue)
+    remain = n - row * k
+
+    print(remain)
+
+
+main()

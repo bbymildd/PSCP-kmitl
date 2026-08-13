@@ -1,11 +1,12 @@
-"""symbol"""
+"""check"""
 def main():
-    """symbol"""
-    sym = 0
-    num = int(input())
-    for _ in range(num):
-        sym = "*"
-        sym += 1
-        num -= 1
-    print(sym)
+    """check"""
+    n = int(input())
+
+    for i in range(1, n + 1):
+        if not i % 5:
+            print("X", end = "")
+        else:
+            print("*", end = "")
+    print()
 main()
