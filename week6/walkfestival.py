@@ -1,4 +1,0 @@
-"""festival"""
-def main():
-    """festival"""
-    
