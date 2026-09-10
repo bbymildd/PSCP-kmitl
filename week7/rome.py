@@ -1,52 +1,38 @@
 """rome"""
 def main():
     """rome"""
-    num = input()
-    a = int(num[0])
-    b = int(num[1])
-    c = int(num[2])
-    d = int(num[3])
-    e = int(num[4])
-
-    if a > 5:
-        first = 9
-    elif b > 5:
-        first = 10
-    elif c > 5:
-        first = 11
-    elif d > 5:
-        first = 12
-    elif e > 5:
-        first = 14
-    else:
-        first = 13
-
-    if num == num[::-1]:
-        if a + e > 5:
-            second = 1
-        elif b * d > 5:
-            second = 2
+    key = input()
+    room = "13"
+    sumnum = 0
+    mulnum = 1
+    for c in key:
+        n = int(c)
+        i = key.find(c)
+        if room == "13" and n > 5:
+            room = str(9 + (i >= 4 and i+1 or i))
+        sumnum += n
+        mulnum *= n
+    if key == key[::-1]:
+        if int(key[0]) + int(key[4]) > 5:
+            room += "1"
+        elif int(key[1]) * int(key[3]) > 5:
+            room += "2"
         else:
-            second = 0
+            room += "0"
     else:
-        if e and a // e > 5:
-            second = 1
-        elif b - e > 5:
-            second = 2
+        if int(key[0]) // (not int(key[4]) and 1 or int(key[4])) > 5:
+            room += "1"
+        elif int(key[1]) - int(key[4]) > 5:
+            room += "2"
         else:
-            second = 0
-
-    total = a + b + c + d + e
-    multiply = a * b * c * d * e
-
-    if total > 25:
-        third = 1
-    elif multiply > 55:
-        third = 2
+            room += "0"
+    if sumnum > 25:
+        room += "1"
+    elif mulnum > 55:
+        room += "2"
     else:
-        third = 0
+        room += "0"
 
-    print(first, second, third, sep="")
-
+    print(room)
 
 main()
