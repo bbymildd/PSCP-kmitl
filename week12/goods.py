@@ -1,0 +1,4 @@
+"""storage"""
+def main():
+    """goods"""
+    
